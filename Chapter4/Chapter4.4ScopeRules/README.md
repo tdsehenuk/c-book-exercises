@@ -1,33 +1,34 @@
- 4.4 – Scope Rules
+# 4.5 – Header Files
 ## SDLC Documentation and Process
 
 ### 1. **Requirement:**
-   As a learner, I want to understand how C handles local and global variables when they share the same name so I can avoid scope conflicts and write clear, bug-free code.
+   As a developer, I want to separate function declarations into a `.h` file and their implementation into a `.c` file. This will help me organize code into reusable modules and support larger programs. 
+   Think of WCU Java Classes
 
 ### 2. **Design:**
-   - Declare a global variable: `int value = 10;`
-   - Inside a function (e.g., `void printValues()`), declare a local variable with the same name: `int value = 20;`
-   - Print both the local and global values to understand how scoping works.
-   - Use the scope resolution technique to access the global `value` even when the local one is in scope.
+   - Create a header file `mathutils.h` with a declaration of a function: `int add(int a, int b);`
+   - Create an implementation file `mathutils.c` where the function is defined.
+   - In `main.c`, include `mathutils.h` and use the `add()` function to add two numbers.
 
 ### 3. **Implementation:**
-   - **Sprint 1**: Create `4.4Scope.c` file with skeleton.
-   - **Sprint 2**: Declare `int value = 10;` outside any function (global).
-   - **Sprint 3**: In a function, declare `int value = 20;` and print both local and global values.
+   - **Sprint 1**: Create three files:
+     - `mathutils.h` (declaration)
+     - `mathutils.c` (implementation)
+     - `main.c` (running program)
+   - **Sprint 2**: Implement the `add()` function in `mathutils.c`.
+   - **Sprint 3**: Use `#include "mathutils.h"` in `main.c` to call `add()`.
 
 ### 4. **Testing:**
-   - Confirm that inside the function, the local variable shadows the global one.
-   - Confirm that you can still access the global variable (e.g., by printing it from `main()` or via a separate function).
+   - Add two known numbers (e.g., `5` and `7`) and ensure the result is correct.
+   - Test with negative numbers and zero.
+   - Ensure all files compile correctly and are linked during compilation.
 
 ### 5. **Deployment:**
-   - Compile and run locally:
-     ```
-     gcc .\4.4Scope.c -o .\4.4Scope.exe
-     .\4.4Scope.exe
-     ```
+   Compile all files together:
+
 
 ### 6. **Maintenance:**
-   - Consider renaming variables to avoid shadowing.
-   - In large codebases, use consistent naming or prefixes (e.g., `g_value`) for globals.
-   - Avoid using globals altogether unless shared state is essential.
-   - Use `static` or `const` to protect variables when appropriate.
+    - Header files should contain **only declarations**, not definitions.
+    - Use include guards (`#ifndef/#define/#endif`) to prevent multiple inclusions.
+    -  Extend `mathutils.h` later with more math functions (e.g., `multiply()`, `factorial()`).
+    - Consider organizing headers in a separate `/include` folder in larger projects.
