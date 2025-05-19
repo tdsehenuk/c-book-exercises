@@ -9,13 +9,17 @@ Call it multiple times from main() and print the final result*/
 
 #include <stdio.h>
 
+int counter = 0; //global
 
-
+void increment() {
+    counter++;
+}
 
 
 int main () {
     printf("\n Welcome to my program!");
     printf("\n I will be showcasing how global (external) variables work!");
-
+    printf("\n Here is my variable counter: %d", counter);
+    
     return 0;
 }
