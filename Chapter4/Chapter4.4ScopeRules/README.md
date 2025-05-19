@@ -14,7 +14,6 @@
    - **Sprint 1**: Create `4.4Scope.c` file with skeleton.
    - **Sprint 2**: Declare `int value = 10;` outside any function (global).
    - **Sprint 3**: In a function, declare `int value = 20;` and print both local and global values.
-   - **Sprint 4**: Use `extern` or helper function if needed to print the global variable.
 
 ### 4. **Testing:**
    - Confirm that inside the function, the local variable shadows the global one.
