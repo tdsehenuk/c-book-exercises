@@ -7,8 +7,13 @@ Write the implementation in another file and include it in your main program.*/
 // Estimated Time (testing/writing/coding/github): 15min
 // Checkout README.md for SDLC Documentation and more info
 
-int main() {
+#include <stdio.h>
+#include "mathutils.h"
 
+int main() {
+    int result = 0;
+    result = add(5, 10);
+    printf("Result of 5 + 10: %d", result);
 
     return 0;
 }
