@@ -16,22 +16,18 @@ Write a function that returns the square of a number.
 - **Sprint 2**: Add `square()` function and test it with a input
 - **Sprint 3**: Add `scanf()` to take input from the user and test different values
 
----
-
 ## 4. Testing
 
-Input  Expected Output 
-3  9             
--5 25             
-0  0              
-
----
+Input  Output 
+3         9                 
+-5       25             
+0         0              
 
 ## 5. (Simulated) Deployment
 
-This project is for learning purposes and runs locally on terminal using `gcc`.
-gcc 4.1square.c -o 4.1square
-.\4.1square.exe
+This project is for learning purposes and runs locally on terminal using :
+- gcc 4.1Square.c -o 4.1Square.exe
+- .\4.1Square.exe
 
 ---
 
@@ -40,11 +36,3 @@ gcc 4.1square.c -o 4.1square
 - Expand to support `float` or `double`
 - Add more input validation
 - Refactor to be used in a larger calculator program
-
----
-
-## Run Instructions
-
-```bash
-gcc main.c -o square
-./square

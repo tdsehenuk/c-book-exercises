@@ -9,10 +9,15 @@
 int square(int n);
 
 int main() {
-    printf("\nWelcome to the square-function program!");
+    int test = 5;
     
+    printf("\nWelcome to the square-function program!");
+    printf("\n%d squared is equal to: %d", test, square(test));
+
     return 0;
 }
 
-
+int square(int n) {
+    return n * n;
+}
 
