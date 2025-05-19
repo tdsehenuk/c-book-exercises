@@ -17,9 +17,13 @@ void increment() {
 
 
 int main () {
-    printf("\n Welcome to my program!");
-    printf("\n I will be showcasing how global (external) variables work!");
-    printf("\n Here is my variable counter: %d", counter);
-    
+    printf("\nWelcome to my program!");
+    printf("\nI will be showcasing how global (external) variables work!");
+    printf("\nHere is my variable counter: %d", counter);
+
+    for(int i = 0; i < 3; i++) {
+        increment();
+        printf("\nCounter after calling function increment: %d ", counter);
+    }
     return 0;
 }
