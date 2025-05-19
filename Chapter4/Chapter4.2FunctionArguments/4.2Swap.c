@@ -14,6 +14,7 @@ int main () {
     int old2 = 20;
     printf("\nWelcome to an program that swaps two values and see if their values change when passed to a function!");
     swap(old1, old2);
+    printf("\nBack in main: old1 = %d, old2 = %d\n", old1, old2);
     return 0; 
 }
 
@@ -23,5 +24,5 @@ void swap(int a, int b) {
     temp = a;
     a = b;
     b = temp;
-    printf("After the swap,a = :%d and b =: %d", a, b);
+    printf("After the swap,a = %d and b = %d", a, b);
 }
