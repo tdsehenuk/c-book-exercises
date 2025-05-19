@@ -19,5 +19,9 @@ int main () {
 
 void swap(int a, int b) {
     printf("\nHere are two values %d and %d. Let's see if they swap values when using the 'swap' function!", a, b);
- 
+    int temp = 0;
+    temp = a;
+    a = b;
+    b = temp;
+    printf("After the swap,a = :%d and b =: %d", a, b);
 }
