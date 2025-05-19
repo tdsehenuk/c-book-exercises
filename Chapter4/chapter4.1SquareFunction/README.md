@@ -36,3 +36,4 @@ This project is for learning purposes and runs locally on terminal using :
 - Expand to support `float` or `double`
 - Add more input validation
 - Refactor to be used in a larger calculator program
+- Create while loop to keep asking if user wants to enter `n` again
