@@ -6,3 +6,11 @@ Test it with factorial(5).*/
 // Date: 5/18/25
 // Estimated Time (testing/writing/coding/github): 15min
 // Checkout README.md for SDLC Documentation and more info
+
+#include <stdio.h>
+
+int main() {
+
+    printf("\nWelcome to my app where i will be showing recursion!");
+    return 0;
+}

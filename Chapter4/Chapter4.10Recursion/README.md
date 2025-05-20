@@ -11,7 +11,7 @@
    - Test with `factorial(5)` in `main()`.
 
 ### 3. **Implementation:**
-   - **Sprint 1**: Create `4.10Recursion.c`
+   - **Sprint 1**: Create `main.c`
    - **Sprint 2**: Write recursive factorial function.
    - **Sprint 3**: Call from `main()` and print result.
 
