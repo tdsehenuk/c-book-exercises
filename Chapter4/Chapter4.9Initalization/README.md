@@ -19,6 +19,8 @@
 
 ### 5. **Deployment:**
    Compile with:
+   gcc .\main.c - o .\main.exe
+   .\main.exe
 
    ### 6. **Maintenance:**
 - Useful for designing functions that need persistent state.
