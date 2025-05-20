@@ -8,10 +8,14 @@ Call it 5 times in a loop from main().
 // Estimated Time (testing/writing/coding/github): 15min
 // Checkout README.md for SDLC Documentation and more info
 
-void counter(); 
+void counter() {
+    int static count = 0;
+    count++;
+    printf("count is equal to: %d ", count);
+} 
 
 int main() {
-    
+
 
     return 0;
 }
