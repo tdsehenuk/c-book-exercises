@@ -7,3 +7,11 @@ Call it 5 times in a loop from main().
 // Date: 5/18/25
 // Estimated Time (testing/writing/coding/github): 15min
 // Checkout README.md for SDLC Documentation and more info
+
+void counter(); 
+
+int main() {
+    
+
+    return 0;
+}
