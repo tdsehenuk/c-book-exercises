@@ -9,7 +9,7 @@
    - Modify both in a loop and print their values before and after.
 
 ### 3. **Implementation:**
-   - **Sprint 1**: Create `4.9Init.c`.
+   - **Sprint 1**: Create `main.c`.
    - **Sprint 2**: Add both variables and a loop that runs 3 times.
    - **Sprint 3**: Modify and print variables within and after the loop.
 
