@@ -29,7 +29,7 @@ int main () {
 
     for(int i = 0; i < 3; i++) {
         for (int j = 0; j<3; j++) {
-           
+            *(pa+i * 3+j) *= 2;
             printf("\n [%d]", *(pa+i * 3+j) );
         }
     }
