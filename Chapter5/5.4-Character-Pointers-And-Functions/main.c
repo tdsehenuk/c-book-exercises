@@ -27,7 +27,9 @@ int main() {
     int *pa = a;
 
     for (int i = 0; i<5; i++) {
-        printf("\nThe address at index %d is %p and is equal to %d", i, pa[i], pa[i]);
+        printf("\nThe address at index %d is %p and is equal to %d", i, &pa[i], pa[i]);
+        printf("\nThe address at index %d is %p and is equal to %d", i, (pa+i), *(pa+i) );
+
     }
 
     return 0;
