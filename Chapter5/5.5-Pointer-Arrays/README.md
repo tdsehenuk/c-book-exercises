@@ -34,4 +34,3 @@
 
 ### 6. **Maintenance:**
    - Ensure that the program only uses pointer arithmetic to access and modify array elements.
-   - Extend it to support arrays of different data types like `float` or `double`.
