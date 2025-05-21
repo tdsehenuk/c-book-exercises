@@ -10,13 +10,34 @@ Create a program that initializes an array of pointers to strings, where each st
 // Checkout README.md for SDLC Documentation and more info
 
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 int main () {
 
-    char *pa[] = {"hello", "how", "are", "you", "doing?"};
+    int numStrings = 3;
+    char *pa[numStrings];
 
-    for(int i = 0; i < 5; i++) {
-        printf("\nElement [%d]'s word: %s", i, pa[i]);
+    pa[0] = (char *)malloc(6 * sizeof(char)); //hello
+    pa[1] = (char *)malloc(6 * sizeof(char)); //world
+    pa[2] = (char *)malloc(4 * sizeof(char)); //!;)
+
+    for(int i = 0; i <numStrings; i++) {
+        if(*(pa+i) == NULL) 
+            printf("\nMemory did not allocate!");
     }
 
+    strcpy(pa[0], "hell");
+    strcpy(pa[1], "world");
+    strcpy(pa[2], "!;)");
+
+    for(int i = 0; i <numStrings; i++) {
+        printf("The string at index %d is %s", i,  *(pa+i));
+    }
+
+    for(int i = 0; i <numStrings; i++) {
+        free(*(pa+i));
+    }
+
+    return 0;
 }

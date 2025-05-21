@@ -50,7 +50,5 @@ gcc array_of_pointers.c -o array_of_pointers.exe
 
 ---
 - Use `malloc` or `calloc` to allocate memory for each string dynamically.
-- Allow the user to enter strings instead of using hardcoded values.
-- Add functions to reverse strings, concatenate them, or find the longest string.
 
 --- 
