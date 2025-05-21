@@ -7,28 +7,41 @@ Print the values before and after the function call to verify that the values ha
 //SLDC
 // Author: Thomas Sehenuk
 // Date: 5/20/25
-// Estimated Time (testing/writing/coding/github): 20min
-// Time with Extended Problem in Step 6: + 10min
+// Estimated Time (testing/writing/coding/github): 10min
+// Time with Extended Problem in Step 6: + 20min
 // Checkout README.md for SDLC Documentation and more info
 
 #include <stdio.h>
-void swap(int *x, int *y); 
+
+#define swap(a, b, type) \
+    do { \
+        type temp = a; \
+        a = b; \
+        b = temp; \
+    } while(0)
+
+//void swap(int *x, int *y); 
 
 int main () {
     int x = 10;
     int y = 20;
     int *px = &x;
-    int *py = &py;
+    int *py = &y;
     
     printf("\nThe value of x and y before swapping: %d and %d", x, y);
-    swap(px, py);
+    swap(*px, *py, int);
     printf("\nThe value of x and y before swapping: %d and %d", x, y);
 
     return 0;
 }
+/*
+updating from step 6
 
 void swap(int *x, int *y) {
     int temp = *x;
-    *y = *x;
-    *x = temp;
+    *x = *y;
+    *y = temp;
 }
+
+
+*/
