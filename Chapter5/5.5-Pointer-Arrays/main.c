@@ -9,7 +9,7 @@ Print the modified array to confirm the changes.*/
 // Author: Thomas Sehenuk
 // Date: 5/20/25
 // Estimated Time (testing/writing/coding/github): 5min
-// Time with Extended Problem in Step 6: + 20min
+// Time with Extended Problem in Step 6: + 10min
 // Checkout README.md for SDLC Documentation and more info
 
 #include <stdio.h>
