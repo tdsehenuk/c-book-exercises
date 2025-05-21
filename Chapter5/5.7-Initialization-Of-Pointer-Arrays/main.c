@@ -23,6 +23,10 @@ int main () {
     int num = 10; 
     int *p = &num;
     int **pp = &p;
-    print("\nWelcome to a pointer to a pointer to an int demostration!");
+    printf("\nNum is equal to  %d", num);
+    printf("\n*P is equal to  %d", *p);
+    printf("\n**PP is equal to %d", **pp);
+
+    
     return 0;
 }
