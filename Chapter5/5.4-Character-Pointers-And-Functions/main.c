@@ -32,5 +32,13 @@ int main() {
 
     }
 
+    printf("\n\nPointer Arithmetic in Reverse") ;
+
+    for (int i = 4; i >= 0; i--) {
+        printf("\nThe address at index %d is %p and is equal to %d", i, &pa[i], pa[i]);
+        printf("\nThe address at index %d is %p and is equal to %d", i, (pa+i), *(pa + i) );
+
+    }
+
     return 0;
 }
