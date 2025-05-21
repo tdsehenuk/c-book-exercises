@@ -22,7 +22,11 @@ int main() {
     for(int i = 0; i < 5; i++) {
         printf("\nElement %d is equal to the value %d", i, *(a+i));
     }
-
+  
+    for(int i = 0; i < 5; i++) {
+        *(a+i) *= 2;
+        printf("\nElement %d is equal to the value %d", i, *(a+i));
+    }
   
 
     return 0;
