@@ -22,7 +22,8 @@
 
 ### 5. **Deployment:**
    Compile with:
-
+   - gcc .\main.c -o .\main.exe
+   - .\main.exe
    
 ### 6. **Maintenance:**
 - Add error handling for negative inputs.
