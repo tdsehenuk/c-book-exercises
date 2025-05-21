@@ -8,12 +8,25 @@ Print the modified array to confirm the changes.*/
 //SLDC
 // Author: Thomas Sehenuk
 // Date: 5/20/25
-// Estimated Time (testing/writing/coding/github): 10min
+// Estimated Time (testing/writing/coding/github): 5min
 // Time with Extended Problem in Step 6: + 20min
 // Checkout README.md for SDLC Documentation and more info
+
+#include <stdio.h>
 
 int main() {
 
     int a[] = {1, 2, 3, 4, 5};
+    int *pa = a;
+
+    for(int i = 0; i < 5; i++) {
+        printf("\nElement %d is equal to the value %d", i, *(a+i));
+    }
+
+  
+
     return 0;
 }
+
+// *(a+i) = a[i]
+// (a+i) = &a[i]
