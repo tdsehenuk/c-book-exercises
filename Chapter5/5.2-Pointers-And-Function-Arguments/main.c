@@ -21,7 +21,8 @@ int main () {
     int *py = &py;
     
     printf("\nThe value of x and y before swapping: %d and %d", x, y);
-    
+    swap(px, py);
+    printf("\nThe value of x and y before swapping: %d and %d", x, y);
 
     return 0;
 }
