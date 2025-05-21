@@ -19,6 +19,10 @@ Modify the value using the pointer to pointer and confirm the change using all t
 #include <string.h> 
 
 int main () {
+
+    int num = 10; 
+    int *p = &num;
+
     print("\nWelcome to a pointer to a pointer to an int demostration!");
     return 0;
 }
