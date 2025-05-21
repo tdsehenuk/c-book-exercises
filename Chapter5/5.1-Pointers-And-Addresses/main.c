@@ -15,6 +15,15 @@ Verify that the value of x has been modified by the function.
 void set_to_zero(int *p);
 
 int main() {
+    
+    int x = 5;
+    int *px = &x;
+    
+    printf("Before function call x: %d", x);
 
     return 0;
+}
+
+void set_to_zero(int *p) {
+    *p = 0;
 }
