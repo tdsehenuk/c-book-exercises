@@ -23,6 +23,8 @@ Then, write two separate functions:
 
 int main() {
 
-    
+    int a[] = {10, 20, 30, 40, 50};
+    int *pa = &a;
+
     return 0;
 }
