@@ -9,8 +9,8 @@ Print the modified matrix to confirm the changes.
 //SLDC
 // Author: Thomas Sehenuk
 // Date: 5/20/25
-// Estimated Time (testing/writing/coding/github): 5min
-// Time with Extended Problem in Step 6: + 20min
+// Estimated Time (testing/writing/coding/github): 15min
+// Time with Extended Problem in Step 6: + 0min
 // Checkout README.md for SDLC Documentation and more info
 */
 
