@@ -9,8 +9,14 @@ Create a program that initializes an array of pointers to strings, where each st
 // Time with Extended Problem in Step 6: + 20min
 // Checkout README.md for SDLC Documentation and more info
 
+#include <stdio.h>
+
 int main () {
 
     char *pa[] = {"hello", "how", "are", "you", "doing?"};
+
+    for(int i = 0; i < 5; i++) {
+        printf("\nElement [%d]'s word: %s", i, pa[i]);
+    }
 
 }
