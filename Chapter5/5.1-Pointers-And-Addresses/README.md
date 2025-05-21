@@ -45,11 +45,18 @@ This shows that the value can be changed via its pointer.
 ### 5. **Deployment:**
 
 This is a small program meant to be compiled locally with `gcc`:
-```bash
-gcc main.c -o pointerBasicsApp.exe
-./pointerBasicsApp
 
-### 6. Maintenance and Extensions:
-Extend set_to_zero() to operate on an array of values using a loop.
-Create other pointer-manipulation functions like increment(int *p) or negate(int *p)
-Consider adding unit tests and code coverage (using gcov and lcov) to track test completeness.
+\`\`\`bash
+gcc main.c -o pointerBasicsApp.exe
+./pointerBasicsApp.exe
+\`\`\`
+
+---
+
+### 6. **Maintenance and Extensions:**
+
+- **Array Manipulation:** Extend `set_to_zero()` to operate on an array of values using a loop.
+- **Additional Functions:** Create other pointer-manipulation functions like `increment(int *p)` or `negate(int *p)`.
+- **Testing and Coverage:** Consider adding unit tests and code coverage (using `gcov` and `lcov`) to track test completeness.
+
+---
