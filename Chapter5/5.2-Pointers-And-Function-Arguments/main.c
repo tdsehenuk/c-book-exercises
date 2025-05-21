@@ -19,3 +19,8 @@ int main () {
 
     return 0;
 }
+void swap(int *x, int *y) {
+    int temp = *x;
+    *y = *x;
+    *x = temp;
+}
