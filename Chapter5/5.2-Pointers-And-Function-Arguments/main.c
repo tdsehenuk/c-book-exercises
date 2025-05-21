@@ -15,10 +15,17 @@ Print the values before and after the function call to verify that the values ha
 void swap(int *x, int *y); 
 
 int main () {
-
+    int x = 10;
+    int y = 20;
+    int *px = &x;
+    int *py = &py;
+    
+    printf("\nThe value of x and y before swapping: %d and %d", x, y);
+    
 
     return 0;
 }
+
 void swap(int *x, int *y) {
     int temp = *x;
     *y = *x;
