@@ -21,8 +21,10 @@ int add(int a, int b);
 int subtract(int a, int b);
 
 int main() {
-    printf("\nAdding two numbers 1 + 3 = %d", add(1,3));
-    printf("\nAdding two numbers 1 - 3 = %d", subtract(1,3));
+
+    int (*fp)(int, int) = add;
+    int result = fp(10, 20);
+    printf("\nResult: %d", result);
 }
 
 int add(int a, int b) {
