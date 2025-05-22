@@ -22,15 +22,40 @@ int subtract(int a, int b);
 
 int main() {
 
-    int (*fp)(int, int) = add;
-    int result = fp(10, 20);
-    printf("\nResult: %d", result);
+    int a, b, choice;
+    int (*fp)(int, int); 
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Choose operation:\n");
+    printf("1. Add\n");
+    printf("2. Subtract\n");
+    printf("Enter choice (1 or 2): ");
+   
+    while(1) {
+        scanf("%d", &choice);
+        if (choice == 1) {
+            fp = add;
+            break;
+        } else if (choice == 2) {
+            fp = subtract;
+            break;
+        } else {
+            printf("Invalid choice.\n");
+        }
+    }
+
+    int result = fp(a,b);
+    printf("\nThe result is: %d", result);
+    return 0;
 }
+
+
 
 int add(int a, int b) {
     return a+b;
 }
-    
 
 int subtract(int a, int b) {
     return a-b;
