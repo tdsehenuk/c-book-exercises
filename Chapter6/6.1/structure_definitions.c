@@ -18,7 +18,7 @@ Write a program that initializes a Book variable and prints its details.
 
 struct Book {
     char title[50];
-    char title[50];
+    char author[50];
     int publicationYear;
     float price;
 };
@@ -27,5 +27,12 @@ struct Book {
 #include <stdio.h>
 
 int main() {
+
+    struct Book book1; 
+    strcpy(book1.title, "Hello World!");
+    strcpy(book1.author, "Thomas Sehenuk");
+    book1.publicationYear = 2025;
+    book1.price = 0.00; // free
+
     return 0;
 }
