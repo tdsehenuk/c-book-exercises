@@ -6,7 +6,6 @@
 
 #include <stdio.h>
 
-void printBookDetails(struct Book book);
 
 struct Book {
     char title[50];
@@ -16,14 +15,21 @@ struct Book {
 };
 
 
+void printBookDetails(struct Book book);
+
+
 
 int main() {
 
     struct Book book1 = {"The Great Gatsby", "F. Scott Fitzgerald", 1925, 10.99};
     struct Book book2 = {"1984", "George Orwell", 1949, 8.99};
+
+    printBookDetails(book1);
+    printBookDetails(book2);
+
     return 0;
 }
 
 void printBookDetails(struct Book book) {
-    printf("\n%s %s %i %.2f");
+    printf("\n%s %s %i %.2f", book.title, book.author, book.publicationYear, book.price);
 }
