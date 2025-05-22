@@ -26,13 +26,16 @@ void printStudentDetails(struct Student student[], int size);
 
 int main() {
     
-    struct Student class[] = { {"Thomas, 24, 3.50"}, {"Dalton, 42, 3.01"}, {"Sehenuk, 100, 4.00"} };
+    struct Student class[] = { {"Thomas", 24, 3.50}, {"Dalton", 42, 3.01}, {"Sehenuk", 100, 4.00} };
     int size = sizeof(class)/sizeof(class[0]);
+
+    printStudentDetails(class, size);
+
     return 0;
 }
 
 void printStudentDetails(struct Student student[], int size) {
     for(int i = 0; i < size; i++) {
-        printf("\nStudent: %s, age: %d, GPA: %.2f", student[i].name, student[i].age, student[i].gpa);
+        printf("\nStudent: %s age: %d GPA: %.2f" , student[i].name, student[i].age, student[i].gpa);
     }
 }
