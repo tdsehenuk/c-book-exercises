@@ -2,7 +2,7 @@
 // Author: Thomas Sehenuk
 // Date: 5/21/25
 //Time Start: 11:41
-//Time Done: 11:
+//Time Done: 11:57
 
 /*
 Write a program that initializes a Student structure with values and prints 
