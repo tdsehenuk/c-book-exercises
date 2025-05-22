@@ -12,11 +12,18 @@ Do not use array indexing (e.g., argv[i]) — instead, use pointer arithmetic.
 //SLDC
 // Author: Thomas Sehenuk
 // Date: 5/21/25
-// Estimated Time (testing/writing/coding/github): 15min
+// Estimated Time (testing/writing/coding/github): 25min
 // Time with Extended Problem in Step 6: + 0min
 // Checkout README.md for SDLC Documentation and more info
 
+#include <stdio.h>
+
 int main (int argc, char *argv[]) {
+    
+    printf("Command line arguments: %d", argc);
+    for(int i = 1; i< argc; i++) {
+        printf("\nArugment %d is equal to %c", i, *(argv + i ));
+    }
 
     return 0;
 }
