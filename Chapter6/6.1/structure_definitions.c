@@ -23,9 +23,9 @@ struct Book {
     float price;
 };
 
+
 #include <stdio.h>
 
 int main() {
-    // TODO: Implement structure definitions
     return 0;
 }
