@@ -13,7 +13,11 @@ struct Car {
 };
 
 int main() {
-    // TODO: Implement pointers to structures
+
+    struct Car *car;
+    car = (struct Car *)malloc(sizeof(struct Car));
+
+
     return 0;
 }
 
