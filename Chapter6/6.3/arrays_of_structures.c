@@ -24,6 +24,7 @@ struct Student {
 
 
 int main() {
-    // TODO: Implement arrays of structures
+
+    struct Student class[] = { {"Thomas, 24, 3.50"}, {"Dalton, 42, 3.01"}, {"Sehenuk, 100, 4.00"} };
     return 0;
 }
