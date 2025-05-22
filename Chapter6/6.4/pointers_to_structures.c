@@ -2,9 +2,11 @@
 // Author: Thomas Sehenuk
 // Date: 5/22/25
 //Time Start: 12:08am
-//Time Done: 12:
+//Time Done: 12:18
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 struct Car {
     char model[30];
