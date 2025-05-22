@@ -18,6 +18,15 @@ int main() {
     car = (struct Car *)malloc(sizeof(struct Car));
 
 
+    if (car == NULL) {
+        printf("Memory allocation failed.\n");
+        return 1;
+    }
+
+    strcpy(car->model, "Audi");
+    car->year = 2015; 
+    car-> price = 10000;
+
     return 0;
 }
 
