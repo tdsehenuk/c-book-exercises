@@ -25,7 +25,7 @@ struct Book {
 
 
 #include <stdio.h>
-
+#include <string.h>
 int main() {
 
     struct Book book1; 
@@ -34,5 +34,6 @@ int main() {
     book1.publicationYear = 2025;
     book1.price = 0.00; // free
 
+    printf("\nThe book named %s writted by %s was released in %d and has a price of %.2f", book1.title, book1.author, book1.publicationYear, book1.price);
     return 0;
 }
