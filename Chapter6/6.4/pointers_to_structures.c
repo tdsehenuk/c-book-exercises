@@ -27,6 +27,11 @@ int main() {
     car->year = 2015; 
     car-> price = 10000;
 
+    printf("Model: %s\n", car->model);
+    printf("Year: %d\n", car->year);
+    printf("Price: $%.2f\n", car->price);
+
+    free(car);
     return 0;
 }
 
