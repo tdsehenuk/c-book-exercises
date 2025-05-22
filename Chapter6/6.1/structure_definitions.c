@@ -2,7 +2,7 @@
 // Author: Thomas Sehenuk
 // Date: 5/21/25
 //Time Start: 11:14
-//Time Done:
+//Time Done: 11:24
 
 /*
 This section introduces struct, a user-defined data type in C that allows grouping different data types together. A structure is defined using the struct keyword, followed by the structure's name and its members enclosed in braces.
