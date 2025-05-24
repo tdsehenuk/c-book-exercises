@@ -13,8 +13,8 @@ typedef struct node {
 void addNodeAtFront(Node **head, int data);
 void printNodeList(Node *head);
 void addNodeAtEnd(Node **head, int data);
+void deleteNodeByValue(Node **head, int data);
 
-void deleteNodeByValue();
 void freeList();
 void searchList();
 int countNodes();
@@ -28,7 +28,11 @@ int main() {
     addNodeAtFront(&head, 10);
     addNodeAtFront(&head, 30);
     addNodeAtFront(&head, 20);
+    addNodeAtFront(&head, 50);
+    addNodeAtFront(&head, 60);
     addNodeAtEnd(&head, 100);
+    printNodeList(head);
+    deleteNodeByValue(&head, 20);
     printNodeList(head);
 
     return 0; 
@@ -80,4 +84,32 @@ void addNodeAtEnd(Node **head, int data) {
     }
     current->next = newNode; 
 
+}
+
+void deleteNodeByValue(Node **head, int data ) {
+    Node *current = *head;
+    Node *prev = NULL;
+
+    if (current == NULL) {
+        return;
+    }
+
+    if(current->data == data) {
+        *head = current->next;
+        free(current);
+        return;
+    }
+
+
+    while (current != NULL && current->data != data) {
+        prev = current;
+        current = current->next;
+    }
+
+    if(current == NULL) {
+        return; 
+    }
+
+    prev->next = current->next;
+    free(current);
 }
