@@ -15,24 +15,46 @@ void printNodeList(Node *head);
 void addNodeAtEnd(Node **head, int data);
 void deleteNodeByValue(Node **head, int data);
 
-void freeList();
-void searchList();
-int countNodes();
-void reverseList();
+void freeList(Node **head);
+Node *searchList(Node *head, int data);
+int countNodes(Node *head, int *ptrcounter);
+void reverseList(Node **head);
 
 
 int main() {
     printf("Hello user, This program is to show how linked lists work!\n");
     
     Node *head = NULL;
+    int counter = 0;
+    int *ptrcounter = &counter;
     addNodeAtFront(&head, 10);
-    addNodeAtFront(&head, 30);
     addNodeAtFront(&head, 20);
+    addNodeAtFront(&head, 30);
+    addNodeAtFront(&head, 40);
     addNodeAtFront(&head, 50);
-    addNodeAtFront(&head, 60);
-    addNodeAtEnd(&head, 100);
+    // addNodeAtEnd(&head, 100);
+    // countNodes(head, ptrcounter);
+    // printf("counter = %d\n", counter);
+
+    // printNodeList(head);
+    // printf("Searching for %d and its at %p", 20, searchList(head, 20) );
+    // deleteNodeByValue(&head, 20);
+    // printNodeList(head);
+    // printf("Searching for %d and its at %p", 20, searchList(head, 20) );
     printNodeList(head);
-    deleteNodeByValue(&head, 20);
+    reverseList(&head);
+    printNodeList(head);
+    freeList(&head);
+
+
+
+
+    if (head == NULL) {
+        printf("List successfully freed!\n");
+    } else {
+        printf("Oops, something went wrong!\n");
+    }
+
     printNodeList(head);
 
     return 0; 
@@ -112,4 +134,59 @@ void deleteNodeByValue(Node **head, int data ) {
 
     prev->next = current->next;
     free(current);
+}
+
+Node *searchList(Node *head, int data) {
+    Node *current = head;
+    while(current != NULL) {
+        if(current->data == data) {
+            return current;
+        } else {
+            current = current->next;
+        }
+    }
+    return NULL;
+
+}
+
+
+
+int countNodes(Node *head, int *ptrcounter) {
+    Node *current = head;
+    if(current == NULL) {
+        return 0;
+    }
+    
+    while(current != NULL) {
+        (*ptrcounter)++; 
+        current = current->next; 
+    }
+    return *ptrcounter;
+}
+
+void freeList(Node **head) {
+    Node *current = *head;
+    Node *next;
+
+    while (current != NULL) {
+        next = current->next;
+        free(current);
+        current = next;
+    }
+
+    *head = NULL;
+}
+
+void reverseList(Node **head) {
+    Node *current = *head;
+    Node *prev = NULL;
+    Node *next = NULL; 
+
+    while (current != NULL)  {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+    *head = prev;
 }
