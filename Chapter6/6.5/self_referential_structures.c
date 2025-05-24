@@ -26,11 +26,13 @@ void insert_first(Node **head, int value) {
 
 void print_list(Node *head) {
     Node *current = head; 
-    while (current != NULL) {
+    while (current != NULL) {git 
         printf("%d -> ", current->data);
         current = current->next;
     }
 }
+
+
 
 int main() {
     Node *head = NULL;
