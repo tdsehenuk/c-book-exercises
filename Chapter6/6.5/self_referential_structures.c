@@ -13,7 +13,8 @@ typedef struct node {
 void addNodeAtFront(Node **head, int data);
 void printNodeList(Node *head);
 void addNodeAtEnd(Node **head, int data);
-void deleteNodeByvalue();
+
+void deleteNodeByValue();
 void freeList();
 void searchList();
 int countNodes();
@@ -23,7 +24,6 @@ void reverseList();
 int main() {
     printf("Hello user, This program is to show how linked lists work!\n");
     
-
     Node *head = NULL;
     addNodeAtFront(&head, 10);
     addNodeAtFront(&head, 30);
