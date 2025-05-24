@@ -9,7 +9,7 @@ Print the counts when EOF is reached
 
 //
 //time start 7:35
-//time stop
+//time stop 7:44
 
 #include <stdio.h>
 
@@ -21,7 +21,7 @@ int main() {
     int otherchars = 0;
 
     while((c = getchar()) != EOF) {
-        if(c >= '0' && c <= 9) {
+        if(c >= '0' && c <= '9') {
             digits++;
         } else if(c == ' ' || c == '\t' || c == '\n') {
             whitespaces++;
@@ -29,6 +29,10 @@ int main() {
             otherchars++;
         }
     }
+
+    printf("\nWhitespaces: %d", whitespaces);
+    printf("\notherchars: %d", otherchars);
+    printf("\ndigits: %d", digits);
 
     return 0;
 }
