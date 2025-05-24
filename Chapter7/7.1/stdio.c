@@ -6,12 +6,22 @@ Converts lowercase letters to uppercase
 */
 
 //Time Start 7:10
-//Time Stop 7:
+//Time Stop 7:22
 
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
 
+    int c = 0;
+    while ((c = getchar()) != EOF) {
+        
+        if(c == ' ') {
+            putchar('_');
+        } else {
+            putchar(toupper(c));
+        }
+    }
     return 0;
 }
