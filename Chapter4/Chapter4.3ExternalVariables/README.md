@@ -25,5 +25,5 @@
 ### 6. **Maintenance:**
    Since `counter` is a global variable, it's accessible and its state can be accessed from anywhere in the file. 
    This is risky for larger programs. In future updates, we should consider:
-     - Making `counter` static and exposing accessor functions.
-     - Moving the counter logic into its own file (e.g., `counter.h` / `counter.c`) for encapsulation ().
+   - Making `counter` static and exposing accessor functions.
+   - Moving the counter logic into its own file (e.g., `counter.h` / `counter.c`) for encapsulation ().

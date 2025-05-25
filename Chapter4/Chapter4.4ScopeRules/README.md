@@ -24,11 +24,11 @@
    - Ensure all files compile correctly and are linked during compilation.
 
 ### 5. **Deployment:**
-   Compile all files together:
-
+   - gcc .\4.4Scope.c -o .\4.4Scope.exe
+   - gcc .\4.4Scope.exe
 
 ### 6. **Maintenance:**
-    - Header files should contain **only declarations**, not definitions.
-    - Use include guards (`#ifndef/#define/#endif`) to prevent multiple inclusions.
-    -  Extend `mathutils.h` later with more math functions (e.g., `multiply()`, `factorial()`).
-    - Consider organizing headers in a separate `/include` folder in larger projects.
+   - Header files should contain **only declarations**, not definitions.
+   - Use include guards (`#ifndef/#define/#endif`) to prevent multiple inclusions.
+   - Extend `mathutils.h` later with more math functions (e.g., `multiply()`, `factorial()`).
+   - Consider organizing headers in a separate `/include` folder in larger projects.

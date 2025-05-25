@@ -22,10 +22,10 @@
 
 ### 5. **Deployment:**
    Compile with:
-   - gcc .\main.c -o .\main.exe
-   - .\main.exe
+   - gcc .\4.10factorial.c -o .\4.10factorial.exe
+   - .\4.10factorial.exe
    
 ### 6. **Maintenance:**
-- Add error handling for negative inputs.
-- Explore iterative alternatives for performance.
-- Add memoization (advanced).
+   - Add error handling for negative inputs.
+   - Explore iterative alternatives for performance.
+   - Add memoization (advanced).

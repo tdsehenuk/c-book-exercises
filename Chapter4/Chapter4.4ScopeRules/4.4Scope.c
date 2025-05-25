@@ -1,7 +1,11 @@
 /*Create a global variable int value = 10;
 Inside a function, declare a local variable int value = 20; and print it.
 Also print the global value.
-→ Can you access both? How?*/
+*/
+// Author: Thomas Sehenuk
+// Date: 5/18/25
+// Estimated Time (testing/writing/coding/github): 20min
+// Checkout README.md for SDLC Documentation and more info
 
 
 

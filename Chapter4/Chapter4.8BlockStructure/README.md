@@ -18,8 +18,8 @@
    - Confirm it fails (or is inaccessible) when used outside.
 
 ### 5. **Deployment:**
-   Compile with:
+   - gcc -.\4.8scope.c -o .\4.8scope.exe
+   - .\4.8scope.exe
 
-   
 ### 6. **Maintenance:**
-- Helps reinforce scope rules and prevent naming conflicts in larger programs.
+   - Helps reinforce scope rules and prevent naming conflicts in larger programs.

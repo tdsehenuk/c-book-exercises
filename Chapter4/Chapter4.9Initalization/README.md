@@ -18,10 +18,9 @@
    - Confirm `static num` retains its value.
 
 ### 5. **Deployment:**
-   Compile with:
-   gcc .\main.c - o .\main.exe
-   .\main.exe
+   - gcc .\main.c - o .\main.exe
+   - .\main.exe
 
    ### 6. **Maintenance:**
-- Useful for designing functions that need persistent state.
-- Can evolve into patterns like static counters, caches, etc.
+   - Useful for designing functions that need persistent state.
+   - Can evolve into patterns like static counters, caches, etc.

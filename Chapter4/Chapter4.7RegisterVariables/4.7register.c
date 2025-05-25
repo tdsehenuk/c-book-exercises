@@ -1,7 +1,6 @@
-/*Problem 7 (optional):
+/*
 Write a function that uses register int i in a loop and explain why the output is no different from a regular int.
 */
-
 // Author: Thomas Sehenuk
 // Date: 5/18/25
 // Estimated Time (testing/writing/coding/github): 15min

@@ -17,7 +17,8 @@
    - Observe any difference in behavior or performance (likely none).
 
 ### 5. **Deployment:**
-   Compile:
+   - gcc .\4.7register.c -o .\4.7register.exe
+   - .\4.7register.exe
 
    ### 6. **Maintenance:**
-- Note that modern compilers ignore `register` — future use is discourage
+   - Note that modern compilers ignore `register` — future use is discouraged

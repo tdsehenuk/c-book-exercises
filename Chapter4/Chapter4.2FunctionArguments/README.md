@@ -12,7 +12,7 @@
    - implement `main()` function to handle the user input and call `swap()`.
 
 ### 3. **Implementation:**
-   - **Sprint 1**: Create `4.2Swap.c` with a skeletona
+   - **Sprint 1**: Create `4.2Swap.c` with a skeleton
    - **Sprint 2**: Setup the function `swap()` that prints the values inside it.
    - **Sprint 3**: Add code to swap values with a temporary variable.
    - **Sprint 4**: Test by calling `swap()` from `main()` and print before and after values to confirm behavior.
@@ -22,11 +22,10 @@
    - Check the printed values inside `main()` to verify that the original variables haven’t changed since they were passed by value.
 
 ### 5. **Deployment:**
-   This is a simple program with no deployment needed. If wanted to run locally: 
-        - gcc .\4.2Swap.c -o .\4.2Swap.exe 
-        - .\4.2Swap.exe
+   - gcc .\4.2Swap.c -o .\4.2Swap.exe 
+   - .\4.2Swap.exe
 
 ### 6. **Maintenance:**
-   Ensure that the function `swap()` is only working with simple integer values. 
-      - Expand to support `float` or `double`.
-      - Exapnd by passing references later.
+   - Ensure that the function `swap()` is only working with simple integer values. 
+   - Expand to support `float` or `double`.
+   - Exapnd by passing references later.

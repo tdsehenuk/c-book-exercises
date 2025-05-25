@@ -19,8 +19,9 @@
    - Ensure that `count` does not reset between calls.
 
 ### 5. **Deployment:**
-   Compile and run:
-
+   - gcc 4.6counter.c -o4.6counter.exe
+   - .\4.6counter.exe
+   
 ### 6. **Maintenance:**
-- Ensure the function is self-contained.
-- Optionally modify it to return `count` or allow reset via parameters.
+   - Ensure the function is self-contained.
+   - Optionally modify it to return `count` or allow reset via parameters.
