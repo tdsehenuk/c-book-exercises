@@ -17,15 +17,15 @@ Just prints how many '\t' and '\n' characters are in a file
 int main(int argc, char *argv[]) {
     
     int inputFD = open(argv[1], O_RDONLY);
-    int ouputFD = open(argv[2], O_RDONLY);
 
     char buf[512]; 
-    int n;
-    int tabcounter;
-    int nlcounter;
+    int n = 0;
+    int tabcounter = 0;
+    int nlcounter = 0;
 
     while((n=read(inputFD, buf, sizeof(buf))) > 0) {
         for(int i = 0; i < n; i++) {
+            printf("char: '%c' ascii: %d\n", buf[i], (unsigned char)buf[i]);
             if(buf[i] == '\n') nlcounter++;
             if(buf[i] == '\t') tabcounter++;
         }
@@ -36,6 +36,11 @@ int main(int argc, char *argv[]) {
         close(inputFD);
         exit(1);
     }
+
+    close(inputFD);
+
+    printf("Tabs: %d\n", tabcounter);
+    printf("Newlines: %d\n", nlcounter);
 
     return 0;
 }
