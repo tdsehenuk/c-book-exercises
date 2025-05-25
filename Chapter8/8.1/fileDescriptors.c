@@ -13,6 +13,23 @@ Use only open(), read(), write(), close()
 #include <stdlib.h>
 
 int main() {
-    int fd = ("input.txt", O_RDONLY);
+    int fd = open("input.txt", O_RDONLY);
+    if(fd < 0) {
+        perror("open");
+        exit(1);
+    }
+
+    char buffer[1024];
+    int n;
+
+    while ((n = read(fd, buffer, sizeof(buffer))) > 0) {
+        write(STDOUT_FILENO, buffer, n);
+    }
+
+    if (n < 0) {
+        perror("read");
+    }
+
+    close(fd);
     return 0;
 }
