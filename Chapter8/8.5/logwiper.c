@@ -17,7 +17,24 @@ Use only low-level functions (open, write, etc.). No fopen or fprintf.
 int main() {
 
     int fd = open("input.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-      
+      if (fd < 0) {
+        perror("open");
+        exit(1);
+    }
+
+    char *message = "Log started.\n";
+
+    int n = write(fd, message, 13);
+    if(n != 13) {
+      perror("write");
+        close(fd);
+        exit(1);  
+    }
+
+    close(fd);
+    printf("log.txt created and initialized.\n");
+    return 0;
+
     return 0;
 }
 
