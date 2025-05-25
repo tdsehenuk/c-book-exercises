@@ -13,6 +13,6 @@ Use only open(), read(), write(), close()
 #include <stdlib.h>
 
 int main() {
-
+    int fd = ("input.txt", O_RDONLY);
     return 0;
 }
