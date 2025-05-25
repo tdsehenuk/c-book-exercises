@@ -14,6 +14,18 @@ Closes both files
 #include <stdlib.h>
 
 int main() {
+    FILE *infile = fopen("input.txt", "r");
+    FILE *outfile = fopen("output.txt", "w"); 
+
+    int c = 0;; 
+    while ( (c = getc(infile)) != EOF) {
+        putc(c, outfile);
+    }
+
+    fclose(infile);
+    fclose(outfile);
+
+    printf("File copied successfully.\n");
 
     return 0;
 }
