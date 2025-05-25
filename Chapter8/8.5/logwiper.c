@@ -7,7 +7,7 @@ Then write "Log started.\n" into it.
 Use only low-level functions (open, write, etc.). No fopen or fprintf.
 */
 //time start 12:12
-//time stop
+//time stop 12:20
 
 #include <fcntl.h>
 #include <unistd.h>
