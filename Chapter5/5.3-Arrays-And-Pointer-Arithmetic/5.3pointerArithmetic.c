@@ -1,5 +1,6 @@
 /*
-Create a program that initializes an array of pointers to strings, where each string is a single word. Then, print each word from the array using a loop.
+Create a program that initializes an array of pointers to strings, where each string is a single word. 
+Then, print each word from the array using a loop.
 */
 
 //SLDC

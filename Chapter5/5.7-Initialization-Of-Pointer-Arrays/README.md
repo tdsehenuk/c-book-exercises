@@ -1,12 +1,9 @@
 # 5.7 – Pointer to Pointer (int **)
 ## SDLC Documentation and Process
 
----
-
 ### 1. **Requirement:**
 As a student learning pointers, I want to understand how double pointers (`int **`) work so I can build knowledge for dynamic memory allocation and advanced pointer use.
 
----
 
 ### 2. **Design:**
 - Declare an `int` variable `num` and assign it a value (e.g. 10).
@@ -18,7 +15,6 @@ As a student learning pointers, I want to understand how double pointers (`int *
   - and the second pointer `**pp`.
 - Modify the value of `num` through `**pp` and print it again to show the change.
 
----
 
 ### 3. **Implementation (Sprints):**
 - **Sprint 1**: Create `5.7DoublePointer.c` with a basic C program skeleton.
@@ -26,7 +22,6 @@ As a student learning pointers, I want to understand how double pointers (`int *
 - **Sprint 3**: Declare `int **pp = &p;`
 - **Sprint 4**: Use `**pp` to print and modify `num`.
 
----
 
 ### 4. **Testing:**
 - Check value output with:
@@ -36,13 +31,10 @@ As a student learning pointers, I want to understand how double pointers (`int *
 - Change the value using `**pp = 99` and verify all three reflect the change.
 - Edge test: Set `p = NULL` and ensure `**pp` is handled safely (optional).
 
----
 
 ### 5. **Deployment:**
-To compile and run locally:
-```bash
-gcc 5.7DoublePointer.c -o 5.7DoublePointer.exe
-./5.7DoublePointer.exe
+  - gcc 5.7pointerPointer.c -o 5.7pointerPointer.exe
+  - .\5.7pointerPointer.exe
 
 ### 6. **Maintenance: **
 - Extend this to work with dynamically allocated memory.

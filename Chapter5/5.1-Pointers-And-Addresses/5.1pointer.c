@@ -5,7 +5,6 @@ In main(), declare an integer x and assign it a value.
 Print the value of x before and after calling set_to_zero() with the address of x. 
 Verify that the value of x has been modified by the function.
 */
-
 //SLDC
 // Author: Thomas Sehenuk
 // Date: 5/20/25

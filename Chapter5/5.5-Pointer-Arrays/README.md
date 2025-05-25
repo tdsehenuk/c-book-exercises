@@ -29,8 +29,8 @@
 
 ### 5. **Deployment:**
    This is a simple program with no deployment needed. To run locally:
-   - `gcc .\5.5PointerArithmetic.c -o .\5.5PointerArithmetic.exe`
-   - `.\5.5PointerArithmetic.exe`
+   - gcc .\5.5pointerArrays.c -o .\5.5pointerArrays.exe
+   - .\5.5pointerArrays.exe
 
 ### 6. **Maintenance:**
    - Ensure that the program only uses pointer arithmetic to access and modify array elements.
