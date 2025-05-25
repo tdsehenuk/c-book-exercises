@@ -5,9 +5,10 @@ No writing, no output file
 Just prints how many '\t' and '\n' characters are in a file
 */
 
+//----------VSCODE does not count the correct tabs when \t occurs it uses 3 spaces (ascii 32) instead of ascii 9
 
-//time start
-//time stop
+//time start 11:10
+//time stop 11:45
 
 #include <unistd.h>
 #include <fcntl.h>
