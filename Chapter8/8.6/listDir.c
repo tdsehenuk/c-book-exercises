@@ -22,5 +22,12 @@ int main (int argc, int *argv[]) {
         return 1;
     }
 
+    struct dirent *entry; 
+    while((entry = readdir()) != NULL) {
+        printf("%s\n", entry->d_name);
+    }
+
+    closedir(dir);
+
     return 0;
 }
