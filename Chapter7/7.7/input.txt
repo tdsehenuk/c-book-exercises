@@ -1,0 +1,4 @@
+hey this tool
+makes each line 
+have a number 
+cool huh?
