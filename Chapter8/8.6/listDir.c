@@ -2,14 +2,14 @@
 Write a program that opens a directory, reads its contents, and prints out the file/directory names inside.
 */
 
-//Time start
-//Time close
+//Time start 12:42
+//Time close 12:51
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <dirent.h>
 
-int main (int argc, int *argv[]) {
+int main (int argc, char *argv[]) {
     const char *dirname = ".";
   
     if (argc > 1) {
@@ -23,7 +23,7 @@ int main (int argc, int *argv[]) {
     }
 
     struct dirent *entry; 
-    while((entry = readdir()) != NULL) {
+    while((entry = readdir(dir)) != NULL) {
         printf("%s\n", entry->d_name);
     }
 
