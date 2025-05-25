@@ -22,7 +22,13 @@ int main () {
     int c = 0;
     while ((c = getc(input)) != EOF) {
         putc(c, output);
+    
+    
+    fclose(input);
+    fclose(output);
     }
+
+
 
     return 0;
 }
