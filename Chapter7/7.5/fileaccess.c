@@ -8,7 +8,7 @@ Closes both files
 */
 
 //time start 8:06
-//time stop 
+//time stop 8:13
 
 #include <stdio.h>
 #include <stdlib.h>
